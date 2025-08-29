@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://harmony-hongo.com/sitemap.xml
