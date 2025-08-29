@@ -1,67 +1,32 @@
-# ハーモニー 公式ウェブサイト
+# 画像ファイル配置ガイド
 
-本郷三丁目のお弁当屋「ハーモニー」の公式ウェブサイトです。
+このディレクトリに以下の画像ファイルを配置してください：
 
-## 🚀 公開前のチェックリスト
+## 必要な画像ファイル
 
-### 必須設定
+1. **shop.jpg** - お店の風景
+2. **shop2.jpg** - お店の風景2
+3. **owner.jpg** - 店主
+4. **cooking.jpg** - 調理風景
+5. **bento.jpg** - 弁当
+6. **bento2.jpg** - 弁当2
 
-- [ ] **Google Analytics ID を設定**
-  - `index.html` の `G-XXXXXXXXXX` を実際のトラッキングIDに置き換え
+## 推奨画像サイズ
 
-- [ ] **お問い合わせフォームの設定**
-  - [Formspree](https://formspree.io) でアカウント作成
-  - `index.html` の `YOUR_FORM_ID` を実際のフォームIDに置き換え
+- ヒーロー画像（bento.jpg）: 800x600px
+- メニュー画像: 400x300px
+- コンセプト画像: 600x400px
+- 店舗画像: 600x400px
 
-- [ ] **ドメイン名の更新**
-  - Open Graph tags のURL
-  - sitemap.xml のURL
-  - robots.txt のURL
+## 画像形式
 
-### 推奨設定
+- JPEG形式を推奨（写真の場合）
+- PNG形式も対応（透過が必要な場合）
 
-- [ ] 画像の最適化（圧縮）
-- [ ] SSL証明書の設定（ホスティングサービス側）
-- [ ] バックアップの設定
+## 画像の最適化
 
-## 📁 ファイル構成
+ウェブサイトのパフォーマンスを向上させるため、画像は以下の点に注意してください：
 
-```
-ハーモニーウェブサイト/
-├── index.html          # メインページ
-├── styles.css          # スタイルシート
-├── script.js           # JavaScript
-├── 404.html           # 404エラーページ
-├── sitemap.xml        # サイトマップ
-├── robots.txt         # クローラー設定
-├── favicon.svg        # ファビコン
-├── images/            # 画像フォルダ
-│   ├── bento.png
-│   ├── bento2.png
-│   ├── bento3.jpg
-│   ├── bento4.jpg
-│   ├── shop.png
-│   ├── shop2.png
-│   ├── owner.png
-│   └── cooking.png
-└── README.md          # このファイル
-```
-
-## 🔧 メンテナンス
-
-### 日替わりメニューの更新
-- Twitter (@okazunoharmony) で毎朝7時頃に自動更新
-- 手動更新が必要な場合は `menu-data.json` を編集
-
-### 営業時間・定休日の変更
-- `index.html` の構造化データ内を編集
-- フッター部分のテキストを編集
-
-## 📞 サポート
-
-技術的な問題が発生した場合の連絡先:
-- 開発者: [連絡先を記入]
-
-## 📄 ライセンス
-
-© 2024 Harmony. All rights reserved.
+- ファイルサイズは1MB以下に圧縮
+- 適切な解像度（72-150dpi）
+- JPEGの品質は80-90%程度
