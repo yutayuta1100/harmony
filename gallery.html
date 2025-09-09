@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ギャラリー | ハーモニー本郷三丁目</title>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Noto Sans JP', sans-serif;
+            background: linear-gradient(135deg, #FFF3E0 0%, #F5F5F5 100%);
+            min-height: 100vh;
+            padding: 40px 20px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        h1 {
+            text-align: center;
+            font-family: 'Playfair Display', serif;
+            font-size: 2.5rem;
+            color: #2E7D32;
+            margin-bottom: 10px;
+        }
+
+        .subtitle {
+            text-align: center;
+            color: #757575;
+            margin-bottom: 50px;
+        }
+
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 30px;
+            margin-bottom: 50px;
+        }
+
+        .gallery-item {
+            background: white;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .gallery-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 35px rgba(0,0,0,0.15);
+        }
+
+        .gallery-image {
+            position: relative;
+            height: 300px;
+            background: linear-gradient(135deg, #2E7D32 0%, #FFA726 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 1.2rem;
+            overflow: hidden;
+        }
+
+        .gallery-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .gallery-info {
+            padding: 20px;
+        }
+
+        .gallery-title {
+            font-size: 1.3rem;
+            color: #212121;
+            margin-bottom: 10px;
+        }
+
+        .gallery-description {
+            color: #757575;
+            line-height: 1.6;
+        }
+
+        .back-link {
+            display: inline-block;
+            text-align: center;
+            margin: 40px auto;
+            padding: 12px 30px;
+            background: #2E7D32;
+            color: white;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: 500;
+            transition: all 0.3s ease;
+        }
+
+        .back-link:hover {
+            background: #1B5E20;
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        }
+
+        .link-container {
+            text-align: center;
+        }
+
+        @media (max-width: 768px) {
+            .gallery-grid {
+                grid-template-columns: 1fr;
+            }
+
+            h1 {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Gallery</h1>
+        <p class="subtitle">ハーモニーの風景</p>
+
+        <div class="gallery-grid">
+            <div class="gallery-item">
+                <div class="gallery-image">
+                    <img src="images/shop.png" alt="お店の風景" onerror="this.style.display='none'; this.parentElement.innerHTML='お店の風景'">
+                </div>
+                <div class="gallery-info">
+                    <h2 class="gallery-title">お店の風景</h2>
+                    <p class="gallery-description">
+                        本郷三丁目駅から徒歩3分。温かみのある店内でお客様をお迎えします。
+                    </p>
+                </div>
+            </div>
+
+            <div class="gallery-item">
+                <div class="gallery-image">
+                    <img src="images/shop2.png" alt="お店の風景2" onerror="this.style.display='none'; this.parentElement.innerHTML='お店の風景2'">
+                </div>
+                <div class="gallery-info">
+                    <h2 class="gallery-title">お店の風景2</h2>
+                    <p class="gallery-description">
+                        清潔で明るい店内。毎日多くのお客様にご利用いただいています。
+                    </p>
+                </div>
+            </div>
+
+            <div class="gallery-item">
+                <div class="gallery-image">
+                    <img src="images/owner.png" alt="店主" onerror="this.style.display='none'; this.parentElement.innerHTML='店主'">
+                </div>
+                <div class="gallery-info">
+                    <h2 class="gallery-title">店主</h2>
+                    <p class="gallery-description">
+                        20年以上の経験を持つ店主が、心を込めて料理をお作りします。
+                    </p>
+                </div>
+            </div>
+
+            <div class="gallery-item">
+                <div class="gallery-image">
+                    <img src="images/cooking.png" alt="調理風景" onerror="this.style.display='none'; this.parentElement.innerHTML='調理風景'">
+                </div>
+                <div class="gallery-info">
+                    <h2 class="gallery-title">調理風景</h2>
+                    <p class="gallery-description">
+                        毎朝早朝から仕込みを開始。新鮮な食材を丁寧に調理しています。
+                    </p>
+                </div>
+            </div>
+
+            <div class="gallery-item">
+                <div class="gallery-image">
+                    <img src="images/bento.png" alt="弁当" onerror="this.style.display='none'; this.parentElement.innerHTML='弁当'">
+                </div>
+                <div class="gallery-info">
+                    <h2 class="gallery-title">自慢のお弁当</h2>
+                    <p class="gallery-description">
+                        彩り豊かで栄養バランスの取れたお弁当。毎日違うメニューをお楽しみください。
+                    </p>
+                </div>
+            </div>
+
+            <div class="gallery-item">
+                <div class="gallery-image">
+                    <img src="images/bento2.png" alt="弁当2" onerror="this.style.display='none'; this.parentElement.innerHTML='弁当2'">
+                </div>
+                <div class="gallery-info">
+                    <h2 class="gallery-title">特製弁当</h2>
+                    <p class="gallery-description">
+                        特別な日のための特製弁当。ボリューム満点で満足度抜群です。
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="link-container">
+            <a href="index.html" class="back-link">メインページに戻る</a>
+        </div>
+    </div>
+</body>
+</html>

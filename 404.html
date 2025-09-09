@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>404 - ページが見つかりません | ハーモニー</title>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Noto Sans JP', sans-serif;
+            background: linear-gradient(135deg, #FFF3E0 0%, #F5F5F5 100%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+        .error-container {
+            text-align: center;
+            max-width: 600px;
+            background: white;
+            padding: 60px 40px;
+            border-radius: 20px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.1);
+        }
+        .error-code {
+            font-size: 120px;
+            font-weight: bold;
+            color: #2E7D32;
+            line-height: 1;
+            margin-bottom: 20px;
+        }
+        .error-title {
+            font-size: 28px;
+            color: #212121;
+            margin-bottom: 20px;
+        }
+        .error-message {
+            font-size: 16px;
+            color: #757575;
+            line-height: 1.8;
+            margin-bottom: 40px;
+        }
+        .error-buttons {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        .btn {
+            display: inline-block;
+            padding: 15px 40px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+        .btn-primary {
+            background: #2E7D32;
+            color: white;
+        }
+        .btn-primary:hover {
+            background: #1B5E20;
+            transform: translateY(-2px);
+            box-shadow: 0 10px 30px rgba(46, 125, 50, 0.3);
+        }
+        .btn-outline {
+            border: 2px solid #2E7D32;
+            color: #2E7D32;
+        }
+        .btn-outline:hover {
+            background: #2E7D32;
+            color: white;
+        }
+        .bento-icon {
+            font-size: 60px;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="error-container">
+        <div class="bento-icon">🍱</div>
+        <div class="error-code">404</div>
+        <h1 class="error-title">ページが見つかりません</h1>
+        <p class="error-message">
+            お探しのページは移動または削除された可能性があります。<br>
+            URLをご確認いただくか、下記のボタンからお戻りください。
+        </p>
+        <div class="error-buttons">
+            <a href="/" class="btn btn-primary">トップページへ</a>
+            <a href="/#menu" class="btn btn-outline">メニューを見る</a>
+        </div>
+    </div>
+</body>
+</html>

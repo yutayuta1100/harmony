@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="ハーモニー - 本郷三丁目の手作りお弁当・おかずテイクアウト専門店。毎日3種類の日替わり弁当を650円でご提供。ヒルトンホテル出身シェフが作る本格派弁当">
+    <meta name="keywords" content="ハーモニー,本郷三丁目,弁当,お弁当,ランチ,テイクアウト,日替わり弁当,文京区">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://harmony-hongo.com/">
+    <meta property="og:title" content="ハーモニー | 本郷三丁目の手作りお弁当">
+    <meta property="og:description" content="本郷三丁目で12年。ヒルトンホテル出身シェフが作る日替わり弁当を650円でご提供">
+    <meta property="og:image" content="https://harmony-hongo.com/images/bento.png">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://harmony-hongo.com/">
+    <meta property="twitter:title" content="ハーモニー | 本郷三丁目の手作りお弁当">
+    <meta property="twitter:description" content="本郷三丁目で12年。ヒルトンホテル出身シェフが作る日替わり弁当を650円でご提供">
+    <meta property="twitter:image" content="https://harmony-hongo.com/images/bento.png">
+    
+    <title>ハーモニー | 本郷三丁目の手作りお弁当</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link rel="icon" type="image/png" href="favicon.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    
+    <!-- 構造化データ -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Restaurant",
+        "name": "ハーモニー",
+        "description": "本郷三丁目の手作りお弁当専門店。ヒルトンホテル出身シェフが作る日替わり弁当を650円でご提供",
+        "url": "https://harmony-hongo.com/",
+        "telephone": "090-6492-8410",
+        "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "本郷3-20-5 グランデュオ本郷 1F",
+            "addressLocality": "文京区",
+            "addressRegion": "東京都",
+            "postalCode": "113-0033",
+            "addressCountry": "JP"
+        },
+        "openingHoursSpecification": [{
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+            "opens": "11:00",
+            "closes": "14:00"
+        }],
+        "servesCuisine": "Japanese",
+        "priceRange": "¥650",
+        "menu": "https://twitter.com/okazunoharmony"
+    }
+    </script>
+    
+    <!-- Google Analytics -->
+    <!-- 実際のトラッキングIDに置き換えてください -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-XXXXXXXXXX');
+    </script>
+</head>
+<body>
+    <!-- スキップリンク（アクセシビリティ） -->
+    <a href="#main" class="skip-link">メインコンテンツへスキップ</a>
+    
+    <!-- ローディング画面 -->
+    <div id="loading" class="loading-screen">
+        <div class="loader"></div>
+    </div>
+
+    <!-- ヘッダー -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <h1>Harmony</h1>
+                    <span class="subtitle">本郷三丁目のお弁当屋</span>
+                </div>
+                <nav class="nav-menu" id="navMenu">
+                    <a href="#home" class="nav-link active">ホーム</a>
+                    <a href="#concept" class="nav-link">コンセプト</a>
+                    <a href="#menu" class="nav-link">メニュー</a>
+                    <a href="#contact" class="nav-link">お問い合わせ</a>
+                    <a href="#access" class="nav-link">アクセス</a>
+                </nav>
+                <button class="menu-toggle" id="menuToggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- ヒーローセクション -->
+    <section id="home" class="hero">
+        <div class="hero-slideshow">
+            <div class="slide active" data-slide="1">
+                <img src="images/bento.png" alt="ハーモニーの手作り弁当">
+            </div>
+            <div class="slide" data-slide="2">
+                <img src="images/bento2.png" alt="日替わり弁当">
+            </div>
+            <div class="slide" data-slide="3">
+                <img src="images/bento3.jpg" alt="特製弁当">
+            </div>
+            <div class="slide" data-slide="4">
+                <img src="images/bento4.jpg" alt="こだわり弁当">
+            </div>
+            <div class="slide" data-slide="5">
+                <img src="images/shop.png" alt="店舗風景">
+            </div>
+            <div class="slide" data-slide="6">
+                <img src="images/shop2.png" alt="店内の様子">
+            </div>
+        </div>
+        <div class="hero-content">
+            <div class="hero-text">
+                <div class="hero-badge">本郷三丁目のお弁当屋</div>
+                <h2 class="hero-title">
+                    <span class="title-main">毎日の食卓に</span>
+                    <span class="title-sub">ハーモニーを</span>
+                </h2>
+                <p class="hero-description">
+                    新鮮な食材と心を込めた調理で<br>
+                    あなたの大切な食事時間を彩ります
+                </p>
+                <div class="hero-buttons">
+                    <a href="#menu" class="btn btn-primary">本日のメニューを見る</a>
+                    <a href="tel:090-6492-8410" class="btn btn-outline">
+                        <span class="btn-icon">☎</span>
+                        <span>090-6492-8410</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 職人のこだわり -->
+    <section class="craftsman">
+        <div class="container">
+            <div class="craftsman-header">
+                <h2 class="craftsman-title">職人のこだわり</h2>
+                <p class="craftsman-subtitle">Craftsman's Dedication</p>
+            </div>
+            <div class="craftsman-grid">
+                <div class="craftsman-card">
+                    <div class="craftsman-image">
+                        <img src="images/cooking.png" alt="仕込み風景" loading="lazy">
+                    </div>
+                    <h3>前日の夜からの仕込み</h3>
+                    <p class="craftsman-text">
+                        前日の夜から始まる丁寧な仕込み。<br>
+                        ヒルトンで培った技術を活かし、<br>
+                        一つ一つの工程に情熱を注ぎます。
+                    </p>
+                </div>
+                <div class="craftsman-card">
+                    <div class="craftsman-image">
+                        <img src="images/owner.png" alt="職人の手仕事" loading="lazy">
+                    </div>
+                    <h3>シェフのこだわり</h3>
+                    <p class="craftsman-text">
+                        ヒルトンホテルでシェフを務めた経験を活かし、<br>
+                        ホテルクオリティの味を<br>
+                        お手頃価格でお届けします。
+                    </p>
+                </div>
+                <div class="craftsman-card">
+                    <div class="craftsman-image">
+                        <img src="images/bento.png" alt="弁当の盛り付け" loading="lazy">
+                    </div>
+                    <h3>手間を惜しまない調理</h3>
+                    <p class="craftsman-text">
+                        手間を惜しまない丁寧な調理。<br>
+                        一つ一つのおかずに情熱を込め、<br>
+                        温かい心と共にお届けします。
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ハーモニーの哲学 -->
+    <section id="concept" class="philosophy">
+        <div class="container">
+            <div class="philosophy-inner">
+                <div class="philosophy-header">
+                    <h2 class="philosophy-title">ハーモニーの哲学</h2>
+                    <div class="philosophy-subtitle">Philosophy of Harmony</div>
+                </div>
+                
+                <div class="philosophy-main">
+                    <div class="philosophy-image">
+                        <img src="images/shop.png" alt="ハーモニーの店内" loading="lazy">
+                        <div class="philosophy-overlay"></div>
+                    </div>
+                    
+                    <div class="philosophy-content">
+                        <div class="philosophy-lead">
+                            <h3>「本物」への飽くなき探求</h3>
+                            <p class="philosophy-years">― 創業12年の誇り ―</p>
+                        </div>
+                        
+                        <div class="philosophy-text">
+                            <p>
+                                本郷三丁目の大通りの外れに佇む小さな店。<br>
+                                それが私たちハーモニーです。
+                            </p>
+                            
+                            <blockquote class="philosophy-quote">
+                                <p>
+                                    「毎日食べるからこそ、本物でなければならない」
+                                </p>
+                            </blockquote>
+                            
+                            <p>
+                                この信念のもと、私たちは12年間、<br>
+                                ただひたすらに「美味しい」を追求し続けてきました。
+                            </p>
+                            
+                            <p>
+                                ヒルトンホテルで培った本格的な技術。<br>
+                                手間を惜しまない丁寧な調理法。<br>
+                                そして、作り手の情熱が込もった温かみ。
+                            </p>
+                            
+                            <p class="philosophy-emphasis">
+                                これが、ハーモニーが守り続ける<br>
+                                「本物の味」です。
+                            </p>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- メニュー -->
+    <section id="menu" class="menu">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Today's Menu</h2>
+                <p class="section-subtitle">本日のメニュー</p>
+            </div>
+            
+            <!-- Twitter最新情報 -->
+            <div class="twitter-section" style="max-width: 500px; margin: 0 auto 3rem; border-radius: 15px; overflow: hidden; box-shadow: 0 2px 10px rgba(0,0,0,0.1);">
+                <a class="twitter-timeline" 
+                   data-height="300"
+                   data-theme="light"
+                   data-chrome="noheader nofooter noborders"
+                   data-tweet-limit="1"
+                   href="https://twitter.com/okazunoharmony?ref_src=twsrc%5Etfw">
+                   最新のメニュー情報を読み込み中...
+                </a>
+                <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+            </div>
+            
+            <!-- Twitter参照文言 -->
+            <div class="menu-notice">
+                <p class="notice-text">
+                    📢 本日のランチメニューは<a href="https://twitter.com/okazunoharmony" target="_blank" class="twitter-link">@okazunoharmony</a>で毎朝7時頃に更新されます
+                </p>
+            </div>
+            
+        </div>
+    </section>
+
+
+    <!-- お問い合わせ -->
+    <section id="contact" class="contact" id="main">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Contact</h2>
+                <p class="section-subtitle">お問い合わせ</p>
+            </div>
+            <div class="contact-content">
+                <div class="contact-form">
+                    <form id="contactForm" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+                        <div class="form-group">
+                            <label for="name">お名前 <span class="required">*</span></label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">メールアドレス <span class="required">*</span></label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">電話番号</label>
+                            <input type="tel" id="phone" name="phone">
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">件名 <span class="required">*</span></label>
+                            <select id="subject" name="subject" required>
+                                <option value="">選択してください</option>
+                                <option value="予約">ご予約について</option>
+                                <option value="配達">配達について</option>
+                                <option value="メニュー">メニューについて</option>
+                                <option value="その他">その他</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">お問い合わせ内容 <span class="required">*</span></label>
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                        </div>
+                        <div class="form-submit">
+                            <button type="submit" class="btn btn-primary">送信する</button>
+                        </div>
+                    </form>
+                </div>
+                <div class="contact-info">
+                    <h3>お電話でのお問い合わせ</h3>
+                    <p class="contact-tel-large">
+                        <a href="tel:090-6492-8410">090-6492-8410</a>
+                    </p>
+                    <p class="contact-hours">受付時間: 10:00 - 14:00（平日のみ）</p>
+                    
+                    <div class="contact-note">
+                        <h4>ご予約について</h4>
+                        <ul>
+                            <li>10個以上のご注文は前日までにご連絡ください</li>
+                            <li>配達のご相談も承ります（周辺エリア限定）</li>
+                            <li>当日のご予約はお電話でお願いします</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- アクセス -->
+    <section id="access" class="access">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Access</h2>
+                <p class="section-subtitle">アクセス</p>
+            </div>
+            <div class="access-content">
+                <div class="access-info">
+                    <h3>ハーモニー</h3>
+                    <dl class="access-details">
+                        <dt>住所</dt>
+                        <dd>
+                            〒113-0033<br>
+                            東京都文京区本郷3-20-5<br>
+                            グランデュオ本郷 1F
+                        </dd>
+                        <dt>最寄り駅</dt>
+                        <dd>
+                            東京メトロ丸ノ内線「本郷三丁目駅」2番出口 徒歩1分<br>
+                            都営大江戸線「本郷三丁目駅」5番出口 徒歩2分
+                        </dd>
+                    </dl>
+                    <a href="https://maps.app.goo.gl/6qJZ8X9YwXzN8yYC8" target="_blank" class="btn btn-map">
+                        Google Mapで見る
+                    </a>
+                </div>
+                <div class="access-map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d809.7506439789893!2d139.7602872!3d35.7075694!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188c2f6e6a7c8d%3A0x7d1e5c5f87e4a0a9!2z5p2x5Lqs6YO95paH5Lqs5Yy65pys6YO377yT5LiB55uu77yS77yQ4oiS77yV!5e0!3m2!1sja!2sjp!4v1635000000000!5m2!1sja!2sjp" 
+                            width="100%" 
+                            height="400" 
+                            style="border:0; border-radius: 15px;" 
+                            allowfullscreen="" 
+                            loading="lazy" 
+                            referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- フッター -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-bottom">
+                <p>&copy; 2024 Harmony. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- スクロールトップボタン -->
+    <button class="scroll-top" id="scrollTop">
+        <span>↑</span>
+    </button>
+
+    <script src="script.js"></script>
+    <!-- <script src="menu-updater.js"></script> -->
+    <script src="secure-menu-updater.js"></script>
+</body>
+</html>

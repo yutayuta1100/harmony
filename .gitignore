@@ -1,0 +1,21 @@
+# 重要: APIキーを含むファイルは絶対にGitにコミットしない
+.env
+.env.local
+config.js
+api-keys.json
+
+# Node.js
+node_modules/
+npm-debug.log*
+
+# OS Files
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+
+# Temporary files
+*.tmp
+*.bak
