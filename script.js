@@ -14,6 +14,7 @@ document.addEventListener('DOMContentLoaded', function() {
     initAnimations();
     initMobileMenu();
     initSlideshow();
+    initTwitterFallback(); // Twitter フォールバック追加
 });
 
 // ========================================
@@ -401,6 +402,48 @@ function initFormHandling() {
         });
     });
 }
+
+// ========================================
+// Twitter埋め込みフォールバック
+// ========================================
+function initTwitterFallback() {
+    // Twitter Widget読み込み後のチェック
+    setTimeout(() => {
+        const twitterSection = document.querySelector('.twitter-section');
+        const twitterFallback = document.querySelector('.twitter-fallback');
+        
+        if (twitterSection && twitterFallback) {
+            // Twitterウィジェットが正常に読み込まれたかチェック
+            const twitterWidget = twitterSection.querySelector('iframe');
+            
+            if (!twitterWidget || twitterWidget.style.height === '0px') {
+                // ウィジェットが読み込まれていない場合、フォールバックを表示
+                twitterSection.style.display = 'none';
+                twitterFallback.style.display = 'block';
+                console.log('Twitter widget failed to load, showing fallback');
+            }
+        }
+    }, 5000); // 5秒後にチェック
+    
+    // さらに長時間後にも再チェック（モバイルで読み込みが遅い場合）
+    setTimeout(() => {
+        const twitterSection = document.querySelector('.twitter-section');
+        const twitterFallback = document.querySelector('.twitter-fallback');
+        
+        if (twitterSection && twitterFallback && twitterFallback.style.display !== 'block') {
+            const twitterWidget = twitterSection.querySelector('iframe');
+            const loadingText = twitterSection.querySelector('.twitter-timeline');
+            
+            // まだ"読み込み中"テキストが表示されている場合
+            if (loadingText && loadingText.textContent.includes('読み込み中') && !twitterWidget) {
+                twitterSection.style.display = 'none';
+                twitterFallback.style.display = 'block';
+                console.log('Twitter widget still loading after 10s, showing fallback');
+            }
+        }
+    }, 10000); // 10秒後に再チェック
+}
+
 
 // ========================================
 // デバッグ用
