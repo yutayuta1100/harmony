@@ -742,6 +742,28 @@ button:focus:not(:focus-visible) {
     background: var(--bg-primary);
 }
 
+/* Twitter埋め込み */
+.twitter-section {
+    max-width: 500px;
+    margin: 0 auto 3rem;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+/* スマホ版Twitter埋め込み */
+@media (max-width: 768px) {
+    .twitter-section {
+        max-width: 100%;
+        margin: 0 var(--spacing-sm) 2rem;
+        border-radius: 10px;
+    }
+    
+    .twitter-timeline {
+        width: 100% !important;
+    }
+}
+
 
 .menu-content {
     animation: fadeIn 0.5s ease;
@@ -1358,17 +1380,29 @@ button:focus:not(:focus-visible) {
         display: flex;
     }
     
+    /* ヒーロー部分のスマホ対応改善 */
     .hero {
         margin-top: 60px;
-        min-height: calc(100vh - 60px);
+        min-height: 70vh; /* 高さを調整 */
+        padding: var(--spacing-md) 0;
     }
     
     .hero-content {
-        padding: var(--spacing-xl);
+        padding: var(--spacing-lg); /* パディング調整 */
+        max-width: 100%;
     }
     
     .hero-text {
-        padding: 0;
+        padding: var(--spacing-xl); /* パディング復活 */
+        margin: 0 var(--spacing-sm); /* マージン追加 */
+        border-radius: 15px; /* 角丸調整 */
+        background: rgba(255, 255, 255, 0.98); /* 背景を少し濃く */
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2); /* シャドウ調整 */
+    }
+    
+    .hero-slideshow .slide img {
+        object-fit: cover;
+        object-position: center; /* 画像の表示位置調整 */
     }
     
     .hero-badge {
